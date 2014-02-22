@@ -32,9 +32,3 @@ exports.createClient = createClient = function ( hostOrConnOpts , clientOptsOrCb
   })
   
 }
-
-createClient('http://localhost:7474', {batchMax:100},function(err,client){
-  client.query('MATCH (p:Person) RETURN p',{},function(){
-    console.log('here',arguments)
-  })
-})
