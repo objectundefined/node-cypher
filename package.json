@@ -1,6 +1,6 @@
 {
   "name": "node-cypher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cypher-only interface to neo4j over http, optimized for speed",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "request": "~2.34.0",
-    "underscore": "~1.6.0",
-    "generic-pool": "~2.0.4"
+    "underscore": "~1.6.0"
   }
 }
