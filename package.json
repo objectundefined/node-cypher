@@ -1,0 +1,20 @@
+{
+  "name": "node-cypher",
+  "version": "0.0.1",
+  "description": "Cypher-only interface to neo4j over http, optimized for speed",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [
+    "cypher",
+    "neo4j"
+  ],
+  "author": "Gabriel Lipson",
+  "license": "ISC",
+  "dependencies": {
+    "request": "~2.34.0",
+    "underscore": "~1.6.0",
+    "generic-pool": "~2.0.4"
+  }
+}
