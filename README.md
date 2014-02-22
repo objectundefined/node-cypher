@@ -16,7 +16,7 @@ cypher.createClient('http://localhost:7474',function(err,client){
 By default, node-cypher will make an individual request per query and does not throttle the quantity of outgoing requests in any way. In the case that you are going to be hitting Neo4j with a high volume of
 requests, you can limit the amount of concurrent outgoing requests, and optimize the number of queries run in a batch per request.
 
-Normally, one would directly use the 'batch' or 'transactional' rest APIs in order to do this. However, these comes with some caveats. 1) You could manually bundle up your requests into a batch, or 2) iteratively hit the transactional cypher endpoint. Either way, in the context of a batch or an open transaction, you are subject to a single failed request causing the entire lot to be rolled back.
+Normally, one would directly use the 'batch' or 'transactional' rest APIs in order to do this. However, these come with some caveats. 1) You could manually bundle up your requests into a batch, or 2) iteratively hit the transactional cypher endpoint. Either way, in the context of a batch or an open transaction, you are subject to a single failed request causing the entire lot to be rolled back.
 
 node-cypher allows you to limit the number of outgoing requests and queue up pending queries against a pool of concurrent batch transactions. Meanwhile, if a batch fails, it intelligently reorders and retries uncommitted (but unproblematic) components of the batch in order to guarantee that each query that can be committed successfully, will be committed. Moreover, every failing component of the batch will be handled appropriately with its associated exception.
 
