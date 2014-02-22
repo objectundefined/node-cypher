@@ -1,6 +1,6 @@
 {
   "name": "node-cypher",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "Cypher-only interface to neo4j over http, optimized for volume. Configurably batches and retries items to increase overall throughput.",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "neo4j"
   ],
   "author": "Gabriel Lipson",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "request": "~2.34.0",
     "underscore": "~1.6.0"
@@ -19,5 +19,11 @@
   "repository": {
     "url": "https://github.com/objectundefined/node-cypher"
   },
-  "homepage": "https://github.com/objectundefined/node-cypher"
+  "homepage": "https://github.com/objectundefined/node-cypher",
+  "bugs": {
+    "url": "https://github.com/objectundefined/node-cypher/issues"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
 }
