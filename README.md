@@ -29,7 +29,7 @@ var connOpts = {
 };
 var clientOpts = {
   concurrency: 10, // default=Infinity
-  batchMax: 100   // default=1
+  batchLimit: 100   // default=1
 };
 cypher.createClient(connOpts, clientOpts, function(err,client){
   
@@ -57,7 +57,7 @@ NOTE: in any situation where the client is committing a single statement, the no
 __Arguments__
 
 * connectionOptions - A URL string or object. Defaults: { host:'http://localhost:7474', base: '/db/data' }
-* clientOptions - An optional object containing batching and concurrency options. Defaults: { concurrency: Infinity, batchMax: 1 }
+* clientOptions - An optional object containing batching and concurrency options. Defaults: { concurrency: Infinity, batchLimit: 1 }
 * callback(err, results) - An optional callback to run once the client has been initialized or an error should the handshake with neo not complete successfully. 
 
 __Example__
@@ -69,7 +69,7 @@ var connOpts = {
 };
 var clientOpts = {
   concurrency: 10, // default=Infinity
-  batchMax: 100   // default=1
+  batchLimit: 100   // default=1
 };
 cypher.createClient(connOpts, clientOpts, function(err,client){
   
