@@ -1,6 +1,6 @@
 # node-cypher
 
-Node Cypher is a cypher-only http client factory for neo4j that allows you to configurably optimize for individual query speed or overall query volume/throughput. Queries should not be treated as transactional, interdependent, or referential.
+Node Cypher is a cypher-only http client factory for neo4j that allows you to configurably optimize for individual query speed or overall query volume/throughput. Queries submitted in series should be treated as indepedent transactions. They should not be interdependent, or referential.
 
 ## Examples
 
