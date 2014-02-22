@@ -1,6 +1,6 @@
 {
   "name": "node-cypher",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Cypher-only interface to neo4j over http, optimized for speed",
   "main": "index.js",
   "scripts": {
